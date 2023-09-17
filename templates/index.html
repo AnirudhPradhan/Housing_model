@@ -17,16 +17,15 @@
 
      <!-- Main Input For Receiving Query to our ML -->
     <form action="{{ url_for('predict')}}"method="post">
-        <input type="int" name="longitude" placeholder="longitude" required="required" />
-    	<input type="int" name="longitude" placeholder="longitude" required="required" />
-        <input type="int" name="latitude" placeholder="latitude" required="required" />
-		<input type="int" name="housing_median_age" placeholder="housing_median_age" required="required" />
-		<input type="int" name="total_rooms" placeholder="total_rooms" required="required" />
+        <input type="number" name="longitude" placeholder="longitude" required="required" />
+        <input type="number" name="latitude" placeholder="latitude" required="required" />
+	<input type="number" name="housing_median_age" placeholder="housing_median_age" required="required" />
+	<input type="number" name="total_rooms" placeholder="total_rooms" required="required" />
 		
-        <input type="int" name="total_bedrooms" placeholder="total_bedrooms" required="required" />
-		<input type="int" name="population" placeholder="population" required="required" />
-		<input type="int" name="households" placeholder="households" required="required" />
-		<input type="int" name="median_income" placeholder="median_income" required="required" />
+        <input type="number" name="total_bedrooms" placeholder="total_bedrooms" required="required" />
+	<input type="number" name="population" placeholder="population" required="required" />
+	<input type="number" name="households" placeholder="households" required="required" />
+	<input type="number" name="median_income" placeholder="median_income" required="required" />
 
         <button type="submit" class="btn btn-primary btn-block btn-large">Predict</button>
     </form>
